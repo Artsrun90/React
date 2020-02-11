@@ -13,17 +13,28 @@ class Todotest extends Component {
        }
 
        render(){
+        const mystyle = {
+            color: "black",
+            padding: "10px",
+            fontFamily: "Arial"
+          };
+          const butt = {
+            backgroundColor: "#4CAF50",
+            padding: "12px 26px",
+            borderRadius: "4px",
+            color: "white"
+          }
            return(
-               <div>
+               <div style={{backgroundColor: "#f2f2f2"}}>
                    <h1>Work list</h1>
                    <Todolisttest items = {this.state.items}/>
                    <form onSubmit={this.handleSubmit}>
                        <label>Wath is need to do?</label>
-                       <input type="text"
+                       <input  style={mystyle} type="text"
                        value = {this.state.text} 
                        onChange = {this.handleClick}
                        />
-       <button>Add#{this.state.items.length + 1}</button>
+       <button style={butt}>Add#{this.state.items.length + 1}</button>
                    </form>
                </div>
            )
