@@ -3,8 +3,8 @@ import s from "./body.module.css"
 
 class Registration extends React.Component {
     state = {
-        login: "name",
-        password: "password",
+        login: "",
+        password: "",
         error: "",
         countError: ""
     }
@@ -13,7 +13,7 @@ class Registration extends React.Component {
         let error = "";
         let countError = "";
               
-        if(this.state.login === "name" || this.state.password === "password" || this.state.login.length > 10 || !this.state.password.match(/[1-9]/g)){
+        if(this.state.login === "" || this.state.password === "" || this.state.login.length > 10 || !this.state.password.match(/[1-9]/g)){
             error = "login or password is not valid";
             let count = 0;
             count++; 
@@ -57,6 +57,8 @@ class Registration extends React.Component {
     render(){
         return(
             <div className={s.bgF}>
+                   <h2>Sign Up</h2>  
+            
             <form onSubmit={this.handleSubmit.bind(this)}>
                 
                <div>

@@ -11,16 +11,27 @@
 .err{
     color: red;
     font-style: italic;
+    margin-left: 37px;
 }
 
 .bgF{
-    background-color: white;
+    background-color: #383838;
+    border-radius: 5px;
     width: 300px;
     height: 300px;    
     margin: auto;
     display:block;
-    margin-top: 60px;
-      
+    margin-top: 60px;      
+}
+
+
+.bgF h2{
+    color: rgb(211, 211, 211);
+    margin: 0px;
+    padding: 10px;
+    padding-left: 90px;
+    background-color: #616161;  
+    font-size: 30px;  
 }
 
 .inp{
@@ -28,25 +39,32 @@
   font-style: italic;
   color: slategray;
   width: 200px;
-  padding: 15px;
-  margin: 5px 0 22px 0;
+  padding: 10px;
+  margin-left: 37px;
   display: inline-block;
-  border: none;
-  background: #f1f1f1;
+  border-radius: 3px;
+  border-color: #cff5ff;
+  background: #cff5ff;
+  margin-top: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .inputReg{
+    margin-left: 40px;
+    margin-top: 20px;
     display:block;
     text-align: center;
     background-color: #05CAEE;
     color: white;
-    padding: 16px 20px;
-    margin: 8px 0;
+    padding: 10px 10px;
     border: none;
     cursor: pointer;
-    width: 150px;
+    width: 120px;
     opacity: 0.9;
     font-size: large;
+    border-radius: 3px;
+    border: 2px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .bg h2{
